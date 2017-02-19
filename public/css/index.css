@@ -23,6 +23,11 @@ body {
  margin-left: 20%;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 h1, h2, h3, h4 {
   font-weight: 500;
   margin: 0;
@@ -30,11 +35,11 @@ h1, h2, h3, h4 {
 }
 
 h2, h3, h4 {
-  padding: .75rem 0;
+  padding: .6rem 0;
 }
 
 p {
-  padding: 0 0 .5rem 0;
+  padding: 0 0 .6rem;
   margin: 0;
 }
 
@@ -71,12 +76,12 @@ code {
   color: #9C3030;
   font-size: 3rem;
   font-weight: 500;
-  margin-right: 10rem;
+  width: 20rem;
+  height: 100%;
 }
 
 .menu ul {
   list-style-type: none;
-  padding: 0;
 }
 
 .menu-item {
@@ -108,12 +113,15 @@ code {
 
 .timestamp {
   color: #c48984;
-  font-size: .8rem;
+  font-size: .9rem;
   vertical-align: top;
 }
 
 .delimiter {
-  height: 2rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 4rem;
 }
 
 .org-preprocessor {
@@ -175,19 +183,17 @@ code {
   bottom: 0;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+.org-ul {
+  margin-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   body {
     width: 90%;
     margin: 0 auto;
   }
   .name {
     display: none;
-  }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px){
-  body {
-    width: 70%;
-    margin: 0 auto;
   }
 }
