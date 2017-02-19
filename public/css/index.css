@@ -1,0 +1,193 @@
+html {
+  background-color: #FFFDF0;
+  color: #372020;
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: #9C3030;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #FFDEDE;
+}
+
+body {
+ width: 46rem;
+ margin-left: 20%;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+  margin: 0;
+  padding: 0 0 2rem;
+}
+
+h2, h3, h4 {
+  padding: .75rem 0;
+}
+
+p {
+  padding: 0 0 .5rem 0;
+  margin: 0;
+}
+
+code {
+ font-family: "Ubuntu Mono";
+ padding: 0.2rem;
+ color: #9C3030;
+ border-radius: 2px;
+ border: 1px solid #FFB0B0;
+ background-color: #FFF4F8;
+}
+
+.title {
+ padding-bottom: 1rem;
+}
+
+.header {
+  margin: 1rem 0 4rem 0;
+}
+
+.in-header {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2rem;
+}
+
+.logo {
+  border: 1px solid #FFEBDF;
+  border-radius: 8px;
+  max-width: 90px;
+}
+
+.name {
+  color: #9C3030;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 10rem;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item {
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.src {
+  font-family: "Ubuntu Mono";
+  padding: 0.5rem;
+  border: 1px solid #000;
+  border-radius: 3px;
+  background: #333;
+  color: #DCDCCC;
+}
+
+.subtitle {
+  color: #c48984;
+  font-size: .8rem;
+  font-weight: bold;
+  padding: 1rem 0 2.5rem;
+}
+
+.subtitle-date {
+  font-weight: normal;
+}
+
+.timestamp {
+  color: #c48984;
+  font-size: .8rem;
+  vertical-align: top;
+}
+
+.delimiter {
+  height: 2rem;
+}
+
+.org-preprocessor {
+   color: #8cd0d3;
+}
+
+.org-preprocessor {
+   color: #8cd0d3;
+}
+
+.org-variable-name {
+   color: #f0dfaf;
+}
+
+.org-string {
+   color: #cc9393;
+}
+
+.org-type {
+   color: #dfdfbf;
+   font-weight: bold;
+}
+
+.org-function-name {
+   color: #8cd0d3;
+   font-weight: bold;
+}
+
+.org-keyword {
+   color: #f0dfaf;
+   font-weight: bold;
+}
+
+.org-comment {
+   color: #7f9f7f;
+}
+
+.org-doc {
+   color: #afd8af;
+}
+
+.org-comment-delimiter {
+   color: #708070;
+}
+
+.org-constant {
+   color: #dca3ac;
+   font-weight:bold;
+}
+
+.org-builtin {
+   color: #7f9f7f;
+}
+
+#postamble {
+  font-size: 0.8rem;
+  position: absolute;
+  margin-bottom: 2rem;
+  bottom: 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .name {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  body {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
