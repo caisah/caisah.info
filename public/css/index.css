@@ -4,7 +4,7 @@ html {
   font-family: Ubuntu;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
   height: 100%;
   width: 100%;
 }
@@ -19,8 +19,9 @@ a:hover {
 }
 
 body {
- width: 46rem;
- margin-left: 20%;
+  height: 100%;
+  width: 46rem;
+  margin: 0 0 0 20%;
 }
 
 ul {
@@ -35,29 +36,29 @@ h1, h2, h3, h4 {
 }
 
 h2, h3, h4 {
-  padding: .6rem 0;
+  padding: 1rem 0;
 }
 
 p {
-  padding: 0 0 .6rem;
+  padding: 0 0 1rem;
   margin: 0;
 }
 
 code {
- font-family: "Ubuntu Mono";
- padding: 0.2rem;
- color: #9C3030;
- border-radius: 2px;
- border: 1px solid #FFB0B0;
- background-color: #FFF4F8;
+  font-family: "Ubuntu Mono";
+  padding: 0.3rem;
+  color: #9C3030;
+  border-radius: 2px;
+  border: 1px solid #FFB0B0;
+  background-color: #FFF4F8;
 }
 
 .title {
- padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .header {
-  margin: 1rem 0 4rem 0;
+  padding: 1rem 0 4rem;
 }
 
 .in-header {
@@ -77,7 +78,6 @@ code {
   font-size: 3rem;
   font-weight: 500;
   width: 20rem;
-  height: 100%;
 }
 
 .menu ul {
@@ -111,76 +111,93 @@ code {
   font-weight: normal;
 }
 
-.timestamp {
+.timestamp, .pre-timestamp {
   color: #c48984;
   font-size: .9rem;
   vertical-align: top;
+}
+
+.pre-timestamp {
+  color: #372020;
 }
 
 .delimiter {
   margin: 0;
   padding: 0;
   border: 0;
-  height: 4rem;
+  height: 3rem;
+}
+
+.delimiter-small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 2rem;
 }
 
 .org-preprocessor {
-   color: #8cd0d3;
+  color: #8cd0d3;
 }
 
 .org-preprocessor {
-   color: #8cd0d3;
+  color: #8cd0d3;
 }
 
 .org-variable-name {
-   color: #f0dfaf;
+  color: #f0dfaf;
 }
 
 .org-string {
-   color: #cc9393;
+  color: #cc9393;
 }
 
 .org-type {
-   color: #dfdfbf;
-   font-weight: bold;
+  color: #dfdfbf;
+  font-weight: bold;
 }
 
 .org-function-name {
-   color: #8cd0d3;
-   font-weight: bold;
+  color: #8cd0d3;
+  font-weight: bold;
 }
 
 .org-keyword {
-   color: #f0dfaf;
-   font-weight: bold;
+  color: #f0dfaf;
+  font-weight: bold;
 }
 
 .org-comment {
-   color: #7f9f7f;
+  color: #7f9f7f;
 }
 
 .org-doc {
-   color: #afd8af;
+  color: #afd8af;
 }
 
 .org-comment-delimiter {
-   color: #708070;
+  color: #708070;
 }
 
 .org-constant {
-   color: #dca3ac;
-   font-weight:bold;
+  color: #dca3ac;
+  font-weight:bold;
 }
 
 .org-builtin {
-   color: #7f9f7f;
+  color: #7f9f7f;
+}
+
+#preamble {
+  height: 15%;
+}
+
+#content {
+  min-height: 80%;
 }
 
 #postamble {
   font-size: 0.8rem;
-  position: absolute;
-  margin-bottom: 2rem;
-  bottom: 0;
+  padding-bottom: .5rem;
 }
 
 .org-ul {
@@ -188,7 +205,7 @@ code {
   padding-bottom: 1rem;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 220px) and (max-width: 767px) {
   body {
     width: 90%;
     margin: 0 auto;
