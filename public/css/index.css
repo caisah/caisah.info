@@ -192,7 +192,8 @@ code {
 }
 
 #content {
-  min-height: 80%;
+  min-height: calc(80% - 30px);
+  padding-top: 30px;
 }
 
 #postamble {
