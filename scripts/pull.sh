@@ -1,3 +1,3 @@
 #!/bin/bash
 
-git pull orign master;
+git pull origin master;
