@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/caisah
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://caisah.info
+  * I am caisah (https://keybase.io/caisah) on keybase.
+  * I have a public key ASAnLyBe9dIbgUwtv7uzSIHsp6LWDaDjrAMQHw_EyOBTKQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01019303c4e3634ba3ef178a19cf6a9452e1c7fbfbc4a039dfbaa05cbda3c180324a0a",
+            "host": "keybase.io",
+            "kid": "0120272f205ef5d21b814c2dbfbbb34881eca7a2d60da0e3ac03101f0fc4c8e053290a",
+            "uid": "2fa994be16f7efb974e19468bb6d3d19",
+            "username": "caisah"
+        },
+        "service": {
+            "hostname": "caisah.info",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1486796281,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1486796253,
+        "hash": "cc205a5770040f308bda9ce7aeb0ae85ba93a469072dbc597b404e10b0897198fe6b7454c01784daf2ed8ed38e6a699ab6f5f0ce1f4a70a63a73763aff912b56",
+        "seqno": 875499
+    },
+    "prev": "7e5df77768f2b311eb46f9e79a85a42d465c59c3ccb5540beb7bd8bec340b404",
+    "seqno": 20,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgJy8gXvXSG4FMLb+7s0iB7Kei1g2g46wDEB8PxMjgUykKp3BheWxvYWTFAvF7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxOTMwM2M0ZTM2MzRiYTNlZjE3OGExOWNmNmE5NDUyZTFjN2ZiZmJjNGEwMzlkZmJhYTA1Y2JkYTNjMTgwMzI0YTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMjcyZjIwNWVmNWQyMWI4MTRjMmRiZmJiYjM0ODgxZWNhN2EyZDYwZGEwZTNhYzAzMTAxZjBmYzRjOGUwNTMyOTBhIiwidWlkIjoiMmZhOTk0YmUxNmY3ZWZiOTc0ZTE5NDY4YmI2ZDNkMTkiLCJ1c2VybmFtZSI6ImNhaXNhaCJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiY2Fpc2FoLmluZm8iLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE4In0sImN0aW1lIjoxNDg2Nzk2MjgxLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0ODY3OTYyNTMsImhhc2giOiJjYzIwNWE1NzcwMDQwZjMwOGJkYTljZTdhZWIwYWU4NWJhOTNhNDY5MDcyZGJjNTk3YjQwNGUxMGIwODk3MTk4ZmU2Yjc0NTRjMDE3ODRkYWYyZWQ4ZWQzOGU2YTY5OWFiNmY1ZjBjZTFmNGE3MGE2M2E3Mzc2M2FmZjkxMmI1NiIsInNlcW5vIjo4NzU0OTl9LCJwcmV2IjoiN2U1ZGY3Nzc2OGYyYjMxMWViNDZmOWU3OWE4NWE0MmQ0NjVjNTljM2NjYjU1NDBiZWI3YmQ4YmVjMzQwYjQwNCIsInNlcW5vIjoyMCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEAbyLizrH1tHs0Z6cuX8YS5xocYurXWYMOwvPMYqYUeb4Bnuk2MlMY3wUmOK1PXk9Z0fzgeSWn4wj8mCEeRUdoDqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgOeFE0/2vlx5KuFQtSICRqY2+hOSJGY/2g7njLv2VTIijdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/caisah
+
+==================================================================
