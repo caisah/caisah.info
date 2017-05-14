@@ -193,6 +193,7 @@ code {
 
 #content {
   min-height: calc(80% - 30px);
+  padding-bottom: 20px;
   padding-top: 30px;
 }
 
