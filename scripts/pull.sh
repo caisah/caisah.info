@@ -1,3 +1,3 @@
 #!/bin/bash
 
-git pull origin master;
+cd /home/caisah/caisah.info && git pull origin master;
