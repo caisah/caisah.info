@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import siteConfig from '../data/site-config';
+
+import Main from '../content/main.md';
+
+---
+
+<BaseLayout description={siteConfig.description} image={siteConfig.image}>
+  <div class="max-w-none prose prose-dante sm:prose-lg">
+    <Main/>
+  </div>
+</BaseLayout>

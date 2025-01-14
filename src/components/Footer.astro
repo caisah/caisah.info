@@ -1,0 +1,17 @@
+---
+import siteConfig from '../data/site-config';
+
+const socialLinks = siteConfig.socialLinks || [];
+---
+
+<footer class="w-full max-w-3xl mx-auto pt-4 pb-10 sm:pt-4 sm:pb-4">
+    <div
+        class:list={[
+            'pt-6 flex flex-col gap-4 border-t border-dashed border-main',
+        ]}
+    >
+        <p class="text-sm">
+            &copy; {new Date().getFullYear()}&nbsp;<a class="hover:underline hover:underline-offset-2" href="/">{siteConfig.title}</a>. Created with <a href="https://astro.build/">astro</a>, with <a href="https://github.com/JustGoodUI/dante-astro-theme">Dante</a> theme.
+        </p>
+    </div>
+</footer>
