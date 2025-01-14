@@ -1,0 +1,44 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/node:23.6.0
+    steps:
+      # Update environment
+      - run: sudo apt update
+
+      # Install rsync.
+      - run: sudo apt-get install rsync
+
+      # Sync the SSH keys
+      - add_ssh_keys
+
+      # Check out the code in the project directory
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package-lock.json" }}
+            - v1-dependencies-
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package-lock.json" }}
+      - run:
+          name: Build project
+          command: npm run build
+
+      # Add the server to known hosts
+      - run: ssh-keyscan -H 45.76.91.135 >> ~/.ssh/known_hosts
+
+      # Upload your files to server.
+      - run: rsync -avce ssh --delete ./dist/ caisah@45.76.91.135:~/public/caisah-info/
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build
