@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/caisah
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://caisah.info
+  * I am caisah (https://keybase.io/caisah) on keybase.
+  * I have a public key ASBJKzply_5aJt-AlFntVadGn4J-H-Mb7WGxpfnDk0cawQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120492b3a65cbfe5a26df809459ed55a7469f827e1fe31bed61b1a5f9c393471ac10a",
+      "host": "keybase.io",
+      "kid": "0120492b3a65cbfe5a26df809459ed55a7469f827e1fe31bed61b1a5f9c393471ac10a",
+      "uid": "2fa994be16f7efb974e19468bb6d3d19",
+      "username": "caisah"
+    },
+    "merkle_root": {
+      "ctime": 1587742484,
+      "hash": "f8e3d5b3cba3bd6eccad9f0b5a1b03e903f1941618f7ebd13760b9dec97ac1d4453da845db83dbfd2b56e425fb5948befb7ad1f8feb16276a8951ecfa34e0077",
+      "hash_meta": "dc76e6adef0c387895f187b975ab18f9cb6dbcc49e35190b2e3f26c21419311b",
+      "seqno": 16039047
+    },
+    "service": {
+      "entropy": "Hmq1IxmokUv4l5BYTUl+TePY",
+      "hostname": "caisah.info",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.4.0"
+  },
+  "ctime": 1587742665,
+  "expire_in": 504576000,
+  "prev": "dc4a7f7082d170fc13704e2bf804a96a0d1a9e9bff81b414010814d3b203b384",
+  "seqno": 46,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgSSs6Zcv+WibfgJRZ7VWnRp+Cfh/jG+1hsaX5w5NHGsEKp3BheWxvYWTESpcCLsQg3Ep/cILRcPwTcE4r+ASpag0anpv/gbQUAQgU07IDs4TEIBuGaV1a1mtcJDE3XebwPvKIwykfWLPFb6Bm3uJQgT4fAgHCo3NpZ8RAUp1Lsx6LjllFHsIN1rMx6cYL1FsHyJycEM+l8NiF+E7ZlOQgt/zFaydB4wKghmwsCjSRIoraLNabUoBWg9vVCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJZLgdpIVbnKYtSw79BR72WXTup7KXO+q266QP0Ys2nfo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/caisah
+
+==================================================================
