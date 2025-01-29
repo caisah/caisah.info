@@ -2,8 +2,6 @@
 title: Deno - jump to definition in jsr.io package
 excerpt: Learn how you can jump to definition for a deno package installed from jsr.io
 publishDate: 'Jan 29 2025'
-tags:
-  - Guide
 seo:
   title: Deno - jump to definition in jsr.io package
   description: Learn how you can jump to definition for a deno package installed from jsr.io
