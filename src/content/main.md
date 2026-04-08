@@ -9,11 +9,10 @@ Hi there! I'm Vlad, but they call me ***caisah*** `kä-i-sə`. I'm a web develop
 You are probably looking for some [blog posts](/blog) or a list of [my projects](/projects). If not, you can check my web presence on:
 
 - [Github](https://github.com/caisah)
-- [Quora](https://www.quora.com/profile/Ca-Isah)
-- [last.fm](https://www.last.fm/user/NumarulTrei)
-- [stack exchange](https://stackexchange.com/users/271694/caisah)
 - [LinkedIN](https://www.linkedin.com/in/vpiersec/)
+- [last.fm](https://www.last.fm/user/NumarulTrei)
 - [goodreads](https://www.goodreads.com/user/show/11475953-caisah)
+- [letterboxd](https://letterboxd.com/caisah/films/by/rated-date/)
 - [parfumo](https://www.parfumo.com/Users/Caisah)
 
 
