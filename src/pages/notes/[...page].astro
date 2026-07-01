@@ -8,25 +8,25 @@ import siteConfig from '../../data/site-config';
 import { sortItemsByDateDesc } from '../../utils/data-utils';
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-  const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
+  const notes = (await getCollection('notes')).sort(sortItemsByDateDesc);
 
-  return paginate(posts, { pageSize: siteConfig.postsPerPage || 4 });
+  return paginate(notes, { pageSize: siteConfig.postsPerPage || 4 });
 }
 
-type Props = { page: Page<CollectionEntry<'blog'>> };
+type Props = { page: Page<CollectionEntry<'notes'>> };
 
 const { page } = Astro.props;
-const blog = page.data;
+const allNotes = page.data;
 ---
 
 <BaseLayout
-    title="Blog"
-    description="Embark on a journey of personal insights and experiences through my blog"
+    title="Notes"
+    description="Short notes and updates"
     image={{ src: '/dante-preview.jpg', alt: 'The preview of the site' }}
     showHeader={false}
 >
-    <h1 class="mb-12 text-2xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">Blog Archive</h1>
-     {blog.map((post) => <ContentPreview entry={post} basePath="/blog" class="mb-10 sm:mb-12" actionLabel="Read Post" />)}
+    <h1 class="mb-12 text-2xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">Notes Archive</h1>
+     {allNotes.map((note) => <ContentPreview entry={note} basePath="/notes" class="mb-10 sm:mb-12" actionLabel="Read Note" />)}
     <Pagination page={page} class="my-16 sm:my-24" />
 
 </BaseLayout>

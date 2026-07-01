@@ -3,14 +3,23 @@ import { type CollectionEntry } from 'astro:content';
 import ArrowRight from '../icons/ArrowRight.astro';
 import FormattedDate from './FormattedDate.astro';
 
-type Props = { post: CollectionEntry<'blog'>; class?: string; headingLevel?: 'h2' | 'h3' };
+type SupportedEntry = CollectionEntry<'blog'> | CollectionEntry<'notes'>;
+type Props = {
+    entry: SupportedEntry;
+    basePath: '/blog' | '/notes';
+    class?: string;
+    headingLevel?: 'h2' | 'h3';
+    actionLabel?: string;
+};
 
-const { post, class: className, headingLevel = 'h2' } = Astro.props;
-const { title, publishDate, updatedDate, excerpt } = post.data;
+const { entry, basePath, class: className, headingLevel = 'h2', actionLabel } = Astro.props;
+const { title, publishDate, updatedDate } = entry.data;
+const excerpt = 'excerpt' in entry.data ? entry.data.excerpt : undefined;
 const TitleTag = headingLevel;
+const label = actionLabel ?? (basePath === '/blog' ? 'Read Post' : 'Read Note');
 ---
 
-<a class:list={['flex justify-between items-start gap-8 group', className]} href={`/blog/${post.id}/`}>
+<a class:list={['flex justify-between items-start gap-8 group', className]} href={`${basePath}/${entry.id}/`}>
     <div class="grow">
         <TitleTag
             class="text-xl leading-tight font-serif font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 sm:text-2xl"
@@ -33,6 +42,6 @@ const TitleTag = headingLevel;
         {excerpt && <div class="mt-3 text-sm leading-normal">{excerpt}</div>}
     </div>
     <div class="hidden font-serif italic opacity-0 transition group-hover:opacity-100 sm:inline-flex sm:gap-1 sm:items-center sm:shrink-0">
-        Read Post <ArrowRight class="fill-current w-4 h-4" />
+        {label} <ArrowRight class="fill-current w-4 h-4" />
     </div>
 </a>

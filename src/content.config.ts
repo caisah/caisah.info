@@ -13,17 +13,25 @@ const seoSchema = z.object({
     pageType: z.enum(['website', 'article']).default('website')
 });
 
+const datedContentSchema = z.object({
+    title: z.string(),
+    publishDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    isFeatured: z.boolean().default(false),
+    tags: z.array(z.string()).default([]),
+    seo: seoSchema.optional()
+});
+
 const blog = defineCollection({
     loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
-    schema: z.object({
-        title: z.string(),
-        excerpt: z.string().optional(),
-        publishDate: z.coerce.date(),
-        updatedDate: z.coerce.date().optional(),
-        isFeatured: z.boolean().default(false),
-        tags: z.array(z.string()).default([]),
-        seo: seoSchema.optional()
+    schema: datedContentSchema.extend({
+        excerpt: z.string().optional()
     })
+});
+
+const notes = defineCollection({
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/notes' }),
+    schema: datedContentSchema
 });
 
 const pages = defineCollection({
@@ -35,4 +43,4 @@ const pages = defineCollection({
 });
 
 
-export const collections = { blog, pages };
+export const collections = { blog, notes, pages };
