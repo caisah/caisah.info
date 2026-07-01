@@ -9,7 +9,7 @@ const { class: className } = Astro.props;
 
 {
     subscribe?.formUrl && (
-        <section class:list={['px-8 py-12 flex flex-col items-center border border-dashed border-main text-center sm:px-12 sm:py-16', className]}>
+        <section class:list={['px-8 py-12 flex flex-col items-center border border-dashed border-edge text-center sm:px-12 sm:py-16', className]}>
             {subscribe.title && (
                 <h2 class:list={['w-full max-w-xl text-2xl leading-tight font-serif font-medium sm:text-4xl', subscribe.text ? 'mb-4' : 'mb-8']}>
                     {subscribe.title}
@@ -31,7 +31,7 @@ const { class: className } = Astro.props;
                     type="email"
                     name="email"
                     id="email"
-                    class="w-full h-9 px-5 py-2 text-sm text-main bg-transparent border border-main rounded-full placeholder:text-main/60 focus:outline-none"
+                    class="w-full h-9 px-5 py-2 text-sm text-default bg-transparent border border-edge rounded-full placeholder:text-default/60 focus:outline-none"
                     required=""
                     value=""
                     placeholder="Your email"
