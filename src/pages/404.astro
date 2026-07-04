@@ -1,0 +1,15 @@
+---
+import Button from '../components/Button.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+Astro.response.status = 404;
+---
+
+<BaseLayout title="Page not found" description="The requested page could not be found.">
+    <section class="flex min-h-[50vh] flex-col items-center justify-center py-16 text-center sm:py-24">
+        <p class="mb-4 font-serif text-6xl leading-none font-medium text-muted sm:text-8xl" aria-hidden="true">404</p>
+        <h1 class="mb-4 font-serif text-3xl leading-tight font-medium sm:text-5xl sm:leading-tight">Page not found</h1>
+        <p class="mb-8 max-w-xl text-lg text-muted">The page you requested does not exist or has moved.</p>
+        <Button href="/">Go home</Button>
+    </section>
+</BaseLayout>
