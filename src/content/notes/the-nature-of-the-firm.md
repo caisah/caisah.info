@@ -1,3 +1,12 @@
+---
+title: The Nature of the Firm
+publishDate: 'Jul 06 2026'
+seo:
+  title: The Nature of the Firm
+  description: Main ideas from The Nature of the Firm paper by R.H. Coase
+---
+
+
 ## "The Nature of the Firm" (R.H. Coase, 1937)
 
 R. H. Coase’s seminal paper addresses a fundamental gap in economic theory: why the allocation of resources is sometimes directed by the market's price mechanism and other times by the conscious coordination of an entrepreneur within a firm. Coase defines the firm by its **supersession of the price mechanism**, replacing market transactions with internal managerial direction.
