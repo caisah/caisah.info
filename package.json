@@ -6,6 +6,7 @@
         "dev": "astro dev",
         "start": "astro dev",
         "build": "astro build",
+        "test": "node --test",
         "preview": "astro preview",
         "preview:cloudflare": "npm run build && wrangler pages dev dist --live-reload",
         "deploy:site": "npm run build && wrangler pages deploy dist --project-name=blog --branch=master",
