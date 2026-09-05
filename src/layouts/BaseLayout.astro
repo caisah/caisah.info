@@ -26,7 +26,7 @@ const { showHeader = true, ...head } = Astro.props;
         ui_host: 'https://eu.posthog.com',
         capture_performance: true,
         defaults: '2026-05-30',
-        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+        person_profiles: 'always',
         capture_exceptions: true,
     })
 </script>
