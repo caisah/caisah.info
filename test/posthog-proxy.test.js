@@ -9,7 +9,6 @@ test('PostHog proxy routes assets and API requests without leaking site credenti
     const upstream = t.mock.method(globalThis, 'fetch', async () => response);
 
     for (const [path, host, method] of [
-        ['', 'eu.i.posthog.com', 'GET'],
         ['/static/array.js', 'eu-assets.i.posthog.com', 'GET'],
         ['/static/web-vitals.js', 'eu-assets.i.posthog.com', 'HEAD'],
         ['/array/project/config.js', 'eu-assets.i.posthog.com', 'GET'],
@@ -44,4 +43,16 @@ test('PostHog proxy routes assets and API requests without leaking site credenti
         assert.equal(options.headers.has('Authorization'), false);
         assert.deepEqual(options.body && Buffer.from(options.body), method === 'POST' ? body : null);
     }
+});
+
+test('PostHog proxy refuses paths outside the SDK surface', async (t) => {
+    const upstream = t.mock.method(globalThis, 'fetch', async () => new Response('upstream'));
+
+    for (const path of ['', '/', '/api/projects', '/attacker.example/static/array.js', '/%2e%2e/api/projects', '/capturex']) {
+        const response = await onRequest({ request: new Request(`https://caisah.info/ingest${path}`, { method: 'POST' }) });
+
+        assert.equal(response.status, 404);
+    }
+
+    assert.equal(upstream.mock.callCount(), 0);
 });
